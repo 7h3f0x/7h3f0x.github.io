@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: 'Cairo', sans-serif;
+	color: white;
+}
+header{
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	background: rgba(0, 0, 0,0.7);
+	font-size: 3vh;
+	height: 7vh;
+}
+ul,ol{
+	list-style-type: none;	
+}
+header li{
+	display: inline-block;
+}
+header a{
+	padding: 0.5rem;
+	text-decoration: none;
+	color:red;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+header a:hover,a:active{
+	background-color: red;
+	color:white; 
+}
+header a{
+    border-bottom: 1px solid transparent;    
+    transition: all .5s ease-in;
+}
+header a:hover{
+    border-bottom: 1px solid white;    
+}
+main{
+	box-sizing: border-box;
+	background: url('portfolio_single.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align:center;
+}
+h1{
+	font-weight: bold;
+	text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#about{
+	padding: 1.5vw;
+	display: flex;
+	flex-direction: row;
+}
+img{
+	width:30%;
+	height: 25%;
+	padding-right: 1.5vw;
+}
+#image{
+	order:-1;
+}
+p{
+	order: 0;
+}
+#achievements,#projects{
+	padding : 1rem;
+	margin: 1vh 1vw;
+	margin-bottom: 0;
+}
+footer{
+	background-image: url('footer.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+footer a{
+	text-decoration: none;
+	margin: 2vh;
+}
+footer img{
+	height: 5vh;
+	width: 5vh;
+}
+@media screen and (max-width: 1200px){
+
+	#about{
+		flex-direction: column;
+	}
+	#about img{
+		width: 100%;
+		padding:5px;
+	}
+}
+
