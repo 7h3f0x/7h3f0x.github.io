@@ -12,26 +12,27 @@ header{
 	width: 100%;
 	text-align: right;
 	background: rgba(0, 0, 0,0.7);
-	font-size: 3vh;
-	height: 7vh;
+	font-size: 1.8vw;
+	height: 4.05vw;
+	display: inline-block;
 }
 ul,ol{
 	list-style-type: none;	
 }
-header li{
+/*header li{
 	display: inline-block;
-}
+}*/
 header a{
 	padding: 0.5rem;
 	text-decoration: none;
-	color:red;
+	color:lightblue;
 	font-weight: bold;
 }
 a{
 	text-decoration: none;
 }
 header a:hover,a:active{
-	background-color: red;
+	background-color: blue;
 	color:white; 
 }
 header a{
@@ -51,12 +52,13 @@ main{
 h1{
 	font-weight: bold;
 	text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Lobster', cursive;
 }
 #about{
 	padding: 1.5vw;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 }
 img{
 	width:30%;
@@ -74,6 +76,9 @@ p{
 	margin: 1vh 1vw;
 	margin-bottom: 0;
 }
+#achievements > a{
+	color: #000022;
+}
 footer{
 	background-image: url('footer.jpg');
 	background-repeat: no-repeat;
@@ -88,8 +93,13 @@ footer img{
 	height: 5vh;
 	width: 5vh;
 }
-@media screen and (max-width: 1200px){
-
+@media screen and (max-width: 1000px){
+	header{
+		box-sizing: border-box;
+		text-align: center;
+		font-size: 1.8rem;
+		height: 7vw;
+	}
 	#about{
 		flex-direction: column;
 	}
@@ -98,4 +108,3 @@ footer img{
 		padding:5px;
 	}
 }
-
