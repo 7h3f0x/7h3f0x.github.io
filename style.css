@@ -106,6 +106,9 @@ footer img{
 	#about{
 		flex-direction: column;
 	}
+	#about > p{
+		margin:auto;
+	}
 	#about img{
 		width: 100%;
 		padding:5px;
