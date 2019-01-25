@@ -19,11 +19,8 @@ header{
 ul,ol{
 	list-style-type: none;	
 }
-/*header li{
-	display: inline-block;
-}*/
 header a{
-	padding: 0.5rem;
+	padding: 0.3rem;
 	text-decoration: none;
 	color:lightblue;
 	font-weight: bold;
@@ -42,6 +39,7 @@ header a{
 header a:hover{
     border-bottom: 1px solid white;    
 }
+
 main{
 	box-sizing: border-box;
 	background: url('portfolio_single.jpg');
@@ -58,7 +56,12 @@ h1{
 	padding: 1.5vw;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
+}
+#about > p{
+	width:50%;
+	margin: auto;
+	margin-left: 0;
 }
 img{
 	width:30%;
