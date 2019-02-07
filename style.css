@@ -3,9 +3,14 @@
 	padding: 0;
 	border: 0;
 }
+html,body{
+	height: 100%;
+	width: 100%;
+}
 body{
 	font-family: 'Cairo', sans-serif;
 	color: white;
+	min-height: 100%;
 }
 header{
 	position: fixed;
@@ -19,24 +24,26 @@ header{
 ul,ol{
 	list-style-type: none;	
 }
-header a{
+header button{
+	background-color: rgba(0, 0, 0,0.7);
 	padding: 0.3rem;
 	text-decoration: none;
 	color:lightblue;
 	font-weight: bold;
 }
-a{
-	text-decoration: none;
-}
-header a:hover,a:active{
+header button:hover,button:active{
 	background-color: blue;
 	color:white; 
 }
-header a{
+header button{
+	display: inline-block;
+	box-sizing: border-box;
+	padding:1rem 1rem; 
+	height: 90%;
     border-bottom: 1px solid transparent;    
     transition: all .5s ease-in;
 }
-header a:hover{
+header button:hover{
     border-bottom: 1px solid white;    
 }
 
@@ -46,6 +53,7 @@ main{
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align:center;
+	height: 86%;
 }
 h1{
 	font-weight: bold;
@@ -53,7 +61,6 @@ h1{
     font-family: 'Lobster', cursive;
 }
 #about{
-	padding: 1.5vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -74,11 +81,6 @@ img{
 p{
 	order: 0;
 }
-#achievements,#projects{
-	padding : 1rem;
-	margin: 1vh 1vw;
-	margin-bottom: 0;
-}
 #achievements > a{
 	color: #000022;
 }
@@ -87,6 +89,7 @@ footer{
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+	height: 15%;
 }
 footer a{
 	text-decoration: none;
