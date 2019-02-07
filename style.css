@@ -16,16 +16,23 @@ header{
 	position: fixed;
 	width: 100%;
 	text-align: right;
-	background: rgba(0, 0, 0,0.7);
+	background: rgba(0, 0, 0);
 	font-size: 1.8vw;
-	height: 4.05vw;
+	height: 4.04vw;
 	display: inline-block;
+}
+header span{
+	padding-left: 1vw;
+	float: left;
+	font-size: 1.5rem;
+	color:lightblue;
+	font-weight: bold;
 }
 ul,ol{
 	list-style-type: none;	
 }
 header button{
-	background-color: rgba(0, 0, 0,0.7);
+	background-color: rgba(0, 0, 0);
 	padding: 0.3rem;
 	text-decoration: none;
 	color:lightblue;
@@ -36,6 +43,7 @@ header button:hover,button:active{
 	color:white; 
 }
 header button{
+	font-size: 1.5rem;
 	display: inline-block;
 	box-sizing: border-box;
 	padding:1rem 1rem; 
@@ -80,9 +88,6 @@ img{
 }
 p{
 	order: 0;
-}
-#achievements > a{
-	color: #000022;
 }
 footer{
 	background-image: url('footer.jpg');
