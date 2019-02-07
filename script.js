@@ -94,7 +94,7 @@ home.addEventListener("click",function() {
 	request.onreadystatechange = function() {
 		if (request.readyState === XMLHttpRequest.DONE) {
 			if (request.status === 200) {
-				history.pushState(null,null,"./index.html")
+				history.pushState(null,null,"./")
 				document.getElementById("inserthere").innerHTML="";
 				canvas.style.display="block";
 			}
